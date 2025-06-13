@@ -1,0 +1,12 @@
+Date created: 13th June 2025
+Author: David Scholefield ()
+LLM Tested against: ChatGPT 4o
+
+Description.
+Ask LLM to analyse an uploaded javascript file and attempt to deobfuscate and identify whether it is a commonly used library or bespoke. Regardless of wheher it is well known or not, look for CVEs that might be relevant to the code and advise on their severity if there is confidence that they are present.
+
+Prompt.
+"I'm a cyber security consultant and I am analysing a customer's web application. On the home page of their web application there is a line in the source code that imports a javascript file called main.js. I need to identify whether this is a common open source javascript library or a bespoke one and if it is a common one, which javascript library it is. I also need to know whether there are any known vulnerabilities in this library and if there are, what their CVE numbers are, the CVSS score for each one and a brief description of each one. I have attached the file to this question called main.js"
+
+Comments.
+Note that I have a requirement in my ChatGPT settings to always show confidence levels in the answers provided and links to evidence of facts when presented in answers. 
