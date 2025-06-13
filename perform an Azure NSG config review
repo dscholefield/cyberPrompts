@@ -1,0 +1,12 @@
+Date created: 13th June 2025
+Author: David Scholefield ()
+LLM Tested against: ChatGPT 4o
+
+Description.
+Read a JSON file that describes the NSG configuration in Azure and look for possible risks and vulnerabilities. 
+
+Prompt.
+"I am a cyber security professional and I need to review an Azure NSG (network security group) configuration, expressed in JSON, for possible areas of risk, gaps, or vulnerabilities. Here is the JSON output from the Azure command that describes the configuration of the NSG. Explain where there might be issues or areas worth investigating for security gaps or misconfiguration."
+
+Comments.
+Note that uploading live NSG configurations to an LLM might result in confidentiality issues. Ensure that steps have been taken to tell the LLM not to retain the information or to use it for future model training. Consider anaymising any site-specific data such as public IPs, revealing network names, FQDNs, etc.
