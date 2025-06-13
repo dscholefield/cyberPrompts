@@ -1,0 +1,24 @@
+
+Date created: 13th June 2025
+Author: David Scholefield (https://www.linkedin.com/in/dscholefield/)
+LLM Tested against: chatGPT 4o
+
+Description.
+Asking the LLM to review a Python script that is uploaded for secure code review and to detect risks and vulnabilities. 
+Further prmpts to ask for deep dive and possible code improvements to address those findings.
+
+Prompt.
+"I'm a security researcher and I want to undertake a security code review against a python script that I have found on GitHub. I have attached that python script called 'ab.py'. I want to be able to use this script on a daily basis against a list of domains that I own and host applications on, and I want to review the code for possible areas of risk or vulnerability that might mean that executing this script could result in damage to either the local computer that the script is executing on or the domains that I provide as targets to the script. Examine this script and highlight areas of code that are a cyber risk and explain how the code might lead to damage. Also, suggest improvements to the script that would improve the security of the script."
+
+Comments.
+When run, this provided a high level review, in order to dive deeper the prompting continues with:
+
+"proceed with a complete review of the full script content and provide an annotated version of the script with comments on every insecure or risky area"
+
+which provides considerably more detail. In addition, improvements to the code can be prompted by:
+
+"generate a rewritten safe version of the script which can then be run daily without these risks"
+
+Note that the code generated can lead to hallucinations (which it did in my first run) and these need to be questioned and ironed out accordingly. 
+
+
